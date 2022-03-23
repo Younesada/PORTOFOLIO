@@ -1,0 +1,84 @@
+<html>
+<head>
+	<title>information</title>
+    <style>
+    	body{
+    		background-image: url(rj.png);
+    	}
+    </style>
+</head>
+<body style="border: 10px solid rgb(15, 14, 14);">
+<center>
+	<fieldset>
+	<center><h1><font size="20" color="aqua"><i><u>reservation hotel </h1></center><br></i></u>
+	<form method="post" action="">
+		<table >
+			<tr>
+				<th > <font size="5" color="aqua">Nom</th><td></font><input type="text" name="nom" id="name"></td>
+			</tr>
+			<tr>
+				<th><font size="5" color="aqua">prenom</th><td><input type="text" name="prenom"></td>
+			</tr>
+			<tr>
+				<th><font size="5" color="aqua">email</th> <td><input type="email" name="mail" placeholder="exmple@gmail.com"></td>
+			</tr>
+			<tr>
+				<th><font size="5" color="aqua">date début</th><td><input type="date" name="datedeb" id="ddb"></td>
+			</tr>
+			<tr>
+				<th><font size="5" color="aqua">date fin</th><td><input type="date" name="datef" id="df" onchange="calculduree()"></td>
+				
+		    </tr>
+		    <tr>
+		    	<th><font size="5" color="aqua">duree</th><td><input type="text" name="duree" id="dure"></td>
+		    </tr>
+
+			<th><font size="5" color="aqua">type</th><td><input type="radio" name="type" value="chambre" id="ch"><font size="5" color="aqua">chambre(250DH)<br>
+			             	<input type="radio" name="type" value="suite" id="sui"><font size="5" color="aqua">suitee(700DH)<br>
+							<input type="radio" name="type" value="bangaloo" id="ban"><font size="5" color="aqua">bangaloo(650DH)<br></td>
+			</tr>
+			<th><font size="5" color="aqua">Extrats</th><td><input type="checkbox" name="type" value="piscine" id="pi"><font size="5" color="aqua">Piscine(100dh)<br>
+								<input type="checkbox" name="type" value="sauna" id="sau"><font size="5" color="aqua">Souna(150dh)<br>
+								<input type="checkbox" name="type" value="discotheque" id="dis"><font size="5" color="aqua">discotheque(50dh)<br>
+								<input type="checkbox" name="type" value="salle de sport" id="sds"><font size="5" color="aqua">salle de sport(200dh)<br></td>
+			<tr>
+				<th><font size="5" color="aqua">montant a payer</th><td><input type="text" name="map" id="map"></td>
+			</tr>
+			
+			<tr>
+				<th><font size="5" color="aqua">TVA</th>
+				
+					<td>
+						<select id="tva">
+							<option selected disabled>
+								selecte la valeur de travai
+							</option>
+          	 				<option value="0">
+          						7%
+          					</option>
+          					<option value="1">
+          						14%
+          					</option>
+          					<option value="2">
+          						20%
+          					</option>
+     					</select><br>
+     				
+					</td>	
+			</tr>
+			<tr>
+		 <th><font size="5" color="aqua">montant tva</th><td><input type="text" name="mtva" id="mtva"></td>
+    			</tr>
+			<tr>
+				<th><input type="button" name="simuler"  value="simuler" onclick="calculmontant()"></th>
+				<th><input type="reset" name="initialiser" value="initialiser"></th></td>
+			</tr>
+
+
+		</table>
+		<script src="reservejs.js "></script>
+	</form>
+</center>
+</fieldset>
+</body>
+</html>

@@ -1,0 +1,59 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    background: url(imgs/br.png);
+    background-size: cover;
+}
+form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 350px;
+    height: 420px;
+    background: rgba(0, 0 , 0 , .5);
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+img[alt="user"]{
+    position: absolute;
+    top: -50px;
+    left:110px;
+    justify-content: center;
+}
+h2{
+    color: #fff;
+    text-align: center;
+    margin-top: 90px;
+
+}
+input[type="text"],[type="password"] {
+    position: absolute;
+    outline: none ;
+    border: none ;
+    width: 250px;
+    height: 35px;
+    border-bottom: 2px solid #0094ff ;
+    background: none;
+    padding: 5px;
+    color: #fff;
+
+
+}
+input[type="text"]{
+    top: 140px;
+    left: 50px;
+}
+input[type="password"]{
+    top: 210px;
+    left: 50px;
+}
+input[value="login"]{
+    position: absolute;
+    top: 305px;
+    left: 110px;
+    width: 130px;
+    height: 35px;
+    background: #007ff;
+}
